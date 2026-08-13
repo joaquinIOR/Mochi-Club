@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #FFFDF9;
+    --foreground: #2D3748;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Utilities & Animations */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 220, 230, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(255, 133, 161, 0.08);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #FFF9F2 0%, #FFEBF0 50%, #E8F8F2 100%);
+}
+
+.gradient-badge {
+  background: linear-gradient(90deg, #FF85A1 0%, #FFB7C5 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FF6B8B 0%, #9055FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.soft-shadow {
+  box-shadow: 0 10px 30px -10px rgba(255, 133, 161, 0.15);
+}
+
+.soft-shadow-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soft-shadow-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(255, 133, 161, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF9;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFC0CB;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF85A1;
+}

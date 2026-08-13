@@ -1,0 +1,9 @@
+# dependencies and build output
+node_modules/
+.next/
+*.tsbuildinfo
+
+# local environment variables and deployment metadata
+.env
+.env.local
+.vercel/
