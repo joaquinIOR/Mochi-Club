@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Sparkles, ArrowRight, Heart, MapPin, Clock, ShieldCheck, ShoppingBag, Star } from "lucide-react";
+import { Sparkles, ArrowRight, MapPin, Clock, ShoppingBag, Star } from "lucide-react";
 import { ProductCard } from "@/components/products/ProductCard";
 import { FeaturedCarousel } from "@/components/home/FeaturedCarousel";
 
@@ -84,6 +84,7 @@ export default function Home() {
   return (
     <div className="space-y-16 pb-16">
       {/* Hero Section */}
+      {false && (
       <section className="relative overflow-hidden gradient-hero pt-12 pb-20 border-b border-pink-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -176,6 +177,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      )}
 
       <FeaturedCarousel />
 
